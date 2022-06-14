@@ -71,8 +71,8 @@ The Client code is first compiled. The server runs on port 5555 in another termi
 given the IP (localhost 127.0.0.1 in this case) and port (5555) as command line inputs. Sample runs of the
 client goes as follows.
 
-        $ gcc client.c -o client
-        $ ./client 127.0.0.1 5555
+        $ gcc Client.c -o Client
+        $ ./Client 127.0.0.1 5555
 
 Connected to server
 
@@ -92,8 +92,8 @@ Server replied: 9
 
 The sample run of the server is as follows.
 
-        $ gcc server1.c -o server1
-        $ ./server1 5555
+        $ gcc Server1.c -o Server1
+        $ ./Server1 5555
 
 Connected with client socket number 4
 
