@@ -41,12 +41,12 @@ I learnt about the concepts of Socket Programming and made two Client Server Mod
 
 - This file contains the client side code.
 - Open another Terminal in the directory where this file is present other than the Terminal in which a Server is running.
-- Compile the file using the command 
-        
+- Compile the file using the command
+
         gcc Client.c -o Client
 
-- Run the file using the command 
-        
+- Run the file using the command
+
         ./Client 127.0.01 5555
 
 - NOTE - Only run the Client.c File when a particular server is already running.
@@ -62,3 +62,49 @@ I learnt about the concepts of Socket Programming and made two Client Server Mod
 - The Server2.c file is a multi process server that can handle multiple clients at a time.
 
 - In the Server2.c we executed multiple fork() calls to create multiple processes without going towards multi-threading.
+
+## Sample Run
+
+### The Client
+
+The Client code is first compiled. The server runs on port 5555 in another terminal. The client program is then
+given the IP (localhost 127.0.0.1 in this case) and port (5555) as command line inputs. Sample runs of the
+client goes as follows.
+
+        $ gcc client.c -o client
+        $ ./client 127.0.0.1 5555
+
+Connected to server
+
+Please enter the message to the server: 2 + 4
+
+Server replied: 6
+
+Please enter the message to the server: 3 \* 3
+
+Server replied: 9
+
+...
+
+...
+
+### The Server
+
+The sample run of the server is as follows.
+
+        $ gcc server1.c -o server1
+        $ ./server1 5555
+
+Connected with client socket number 4
+
+Client socket 4 sent message: 2 + 4
+
+Sending reply: 6
+
+Client socket 4 sent message: 3 \* 3
+
+Sending reply: 9
+
+...
+
+...
