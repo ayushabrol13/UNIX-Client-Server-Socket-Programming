@@ -4,6 +4,10 @@ I have implemented a simple client-server model where a client program can chat 
 
 I learnt about the concepts of Socket Programming and made two Client Server Models.
 
+## Setup Terminal Path
+
+        cd <directory>/src
+
 ## Server1.c File
 
 - This is the server file which is used to create a server and listen to the client.
